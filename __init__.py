@@ -1,13 +1,4 @@
-"""Discount strategies."""
-from .base import Discount, DiscountContext
-from .percentage import PercentageDiscount
-from .fixed import FixedAmountDiscount
-from .first_month_free import FirstMonthFree
+"""Payment gateways (mock)."""
+from .gateway import PaymentGateway, PaymentResult, ScriptedGateway, FakeRandomGateway
 
-__all__ = [
-    "Discount",
-    "DiscountContext",
-    "PercentageDiscount",
-    "FixedAmountDiscount",
-    "FirstMonthFree",
-]
+__all__ = ["PaymentGateway", "PaymentResult", "ScriptedGateway", "FakeRandomGateway"]
